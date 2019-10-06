@@ -1,6 +1,8 @@
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 import AboutScreen from '../screens/AboutScreen';
+import ButtonGroup from '../screens/ButtonGroup';
+import CardScreen from '../screens/CardScreen';
 import HomeScreen from '../screens/HomeScreen';
 
 const AppStack = createStackNavigator({
@@ -14,6 +16,18 @@ const AppStack = createStackNavigator({
     screen: AboutScreen,
     navigationOptions: {
       title: 'About',
+    },
+  },
+  Card: {
+    screen: CardScreen,
+    navigationOptions: {
+      title: 'Card',
+    },
+  },
+  Button: {
+    screen: ButtonGroup,
+    navigationOptions: {
+      title: 'Button',
     },
   },
 });
